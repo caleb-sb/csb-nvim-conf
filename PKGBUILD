@@ -1,10 +1,10 @@
 # Maintainer: Caleb Bredekamp
 pkgname=csb-nvim-conf-git
 _pkgname=csb-nvim-conf
-pkgver=v0.0.1.r3.gb8d9b9b
+pkgver=v0.0.1.r4.g30bd064
 pkgrel=1
 _destname1="/etc/skel/.config/nvim/"
-pkgdesc="CSB neovim configuration"
+pkgdesc="Caleb's neovim configuration"
 arch=('any')
 url="https://github.com/caleb-sb/${_pkgname}.git"
 license=('MIT')
