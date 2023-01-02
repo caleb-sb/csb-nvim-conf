@@ -1,7 +1,7 @@
 # Maintainer: Caleb Bredekamp
 pkgname=csb-nvim-conf-git
 _pkgname=csb-nvim-conf
-pkgver=v0.0.1.r1.g8966f88
+pkgver=v0.0.1.r2.gab05df1
 pkgrel=1
 _destname1="/etc/skel/.config/nvim/"
 pkgdesc="CSB neovim configuration"
@@ -19,7 +19,6 @@ sha256sums=('SKIP')
 package() {
 	install -dm 755 ${pkgdir}${_destname1}
 	cp -r ${srcdir}/${_pkgname}/* ${pkgdir}${_destname1}
-	cp -r ${srcdir}/${_pkgname}/* ${pkgdir}${_destname2}
 }
 pkgver() {
 	cd "$_pkgname"
