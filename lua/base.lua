@@ -24,6 +24,6 @@ vim.opt.scrolloff = 8
 vim.opt.updatetime = 50
 
 vim.opt.list = true
-vim.opt.listchars:append('tab: ')
+vim.opt.listchars:append('tab: ')
 vim.opt.listchars:append('trail:·')
 vim.opt.listchars:append('multispace:·')

@@ -51,4 +51,6 @@ return require('packer').startup(function(use)
 	}
 
 	use "kdheepak/lazygit.nvim"
+
+	use "ThePrimeagen/git-worktree.nvim"
 end)

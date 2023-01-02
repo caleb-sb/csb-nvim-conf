@@ -26,6 +26,13 @@ vim.keymap.set("n", "sf", function()
 	})
 end
 )
+vim.keymap.set("n", "<leader>w", function()
+	telescope.extensions.git_worktree.git_worktrees()
+end)
+
+vim.keymap.set("n", "<leader>cw", function()
+	telescope.extensions.git_worktree.create_git_worktree()
+end)
 
 local fb_actions = telescope.extensions.file_browser.actions
 
@@ -56,3 +63,4 @@ telescope.setup {
 }
 
 telescope.load_extension("file_browser")
+telescope.load_extension("git_worktree")
