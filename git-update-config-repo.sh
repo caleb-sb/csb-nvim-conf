@@ -10,17 +10,13 @@ git add --all
 git commit -m "$1"
 
 echo "Pushing..."
-git push origin main
+git push --tags origin main
 
-echo "Going to run makepkg now..."
-cd /home/caleb/personal/pkgbuild/"$config_repo"/
-makepkg -f
-echo "Cleaning up"
-rm -rf csb-nvim-conf pkg src
+sh make-pkg.sh
 
 echo "Going to update the arco_config repo..."
 cd /home/caleb/personal/arco_config/
-mv /home/caleb/personal/pkgbuild/"$config_repo"/*.pkg.tar.zst ./x86_64/
+mv /home/caleb/personal/"$config_repo"/*.pkg.tar.zst ./x86_64/
 
 sh git-update-repo.sh
 
