@@ -1,6 +1,7 @@
 vim.wo.rnu = true
 vim.opt.list = false
 vim.opt.listchars:append('tab:⇀ ')
+vim.opt.swapfile = false
 -- vim.opt.listchars:append('trail:·')
 -- vim.opt.listchars:append('multispace:·')
 --
